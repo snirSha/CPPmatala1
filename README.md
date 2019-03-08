@@ -1,18 +1,18 @@
-Bash Compilation And Leaks Test
+#Bash Compilation And Leaks Test
 
-*authors:
+##*authors:
 
 Amir Hoshen 305151292
 
 Snir Shaharabani 204040687
 
 
-*About the script:
+##*About the script:
 
 This script checks compilation, memory leaks and thread race of c/c++ files/codes.
 
 
-*Sources:
+##*Sources:
 
 Bash code :
 
