@@ -1,4 +1,4 @@
-Bash Compilation And Leaks Test
+#Bash Compilation And Leaks Test
 
 
 *authors:
