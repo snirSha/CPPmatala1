@@ -12,7 +12,7 @@ if [ $? -gt 0 ]; then
 else
     ansCompilation=0
 
-    valgrind --tool=memcheck --leak-check=full --error-exitcode=3 -q ./$program &> /dev/null
+    valgrind --tool=memcheck ${@:3} --leak-check=full --error-exitcode=1 -q ./$program &> /dev/null
     if [ $? -gt 0 ]; then
        ansMemoryLeak=1
     else
