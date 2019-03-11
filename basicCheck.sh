@@ -6,14 +6,13 @@ cd $dirPath
 make &> /dev/null
 
 
-clang++-5.0 $program ${@:3} &> /dev/null
 
 if [ $? -gt 0 ]; then
    ansCompilation=1
 else
     ansCompilation=0
 
-    valgrind --tool=memcheck --leak-check=full --error-exitcode=3 -q ./a.out &> /dev/null
+    valgrind --tool=memcheck --leak-check=full --error-exitcode=3 -q ./$program &> /dev/null
     if [ $? -gt 0 ]; then
        ansMemoryLeak=1
     else
