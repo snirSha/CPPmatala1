@@ -19,7 +19,7 @@ else
        ansMemoryLeak=0
     fi
  
-    valgrind --tool=helgrind --error-exitcode=1 -q ./$program &> /dev/null
+    valgrind --tool=helgrind -q ./$program &> /dev/null
     if [ $? -gt 0 ]; then 
        ansTreadRace=1
     else
