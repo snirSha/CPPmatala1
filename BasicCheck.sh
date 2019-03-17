@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Snir Shaharabani 204040687
+#Amir Hoshen 305151292
+
 dirPath=$1
 program=$2
 cd $dirPath
