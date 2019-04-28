@@ -1,8 +1,8 @@
 # Bash Compilation And Leaks Test
 ## Authors:
-Amir Hoshen 305151292
+Amir Hoshen
 
-Snir Shaharabani 204040687
+Snir Shaharabani 
 
 ## About the script:
 This script checks compilation, memory leaks and thread race of c/c++ files/codes.
